@@ -1,0 +1,240 @@
+.container-list {
+  margin: 30px 100px 0 100px;
+  border-radius: 5px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.initial {
+  background: #1B3B6F;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: #f1f1f1;
+  font-weight: 700;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.fondo-l {
+  background: #DCDCDD;
+  border-left: 3px solid #DCDCDD;
+  border-right: 3px solid #DCDCDD;
+}
+
+.fondo-d {
+  border-left: 3px solid #DCDCDD;
+  border-right: 3px solid #DCDCDD;
+  border-bottom: 3px solid #DCDCDD;
+}
+
+p {
+  width: 50%;
+  text-align: center;
+}
+
+.settings {
+  height: 35px;
+}
+
+.settings .editar, .settings .eliminar {
+  cursor: pointer;
+  width: 80px;
+  margin-left: 20px;
+  border: none;
+  height: 100%;
+  background: transparent;
+  color: white;
+  font-weight: 800;
+  border-radius: 5px;
+}
+
+.settings .editar {
+  background: rgba(0, 0, 255, 0.7);
+}
+
+.settings .eliminar {
+  background: rgba(197, 16, 16, 0.7);
+}
+
+@media (max-width: 980px) {
+  .container-list {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .container-list .container {
+    width: 50%;
+  }
+  .container-list .settings {
+    width: 50%;
+  }
+  .container-list .settings .editar, .container-list .settings .eliminar {
+    max-width: 80px;
+    width: auto;
+  }
+}
+
+.add {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.add-product {
+  padding: 20px 40px;
+  background: #21295C;
+  border: none;
+  border-radius: 5px;
+  color: #f1f1f1;
+  font-weight: 900;
+  font-size: 20px;
+  -webkit-transition: .5s all;
+  transition: .5s all;
+}
+
+.add-product:hover {
+  background: #1B3B6F;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.add-product:focus {
+  outline: none;
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.back:focus {
+  outline: none;
+}
+
+.container-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+  background: #DCDCDD;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0px 0px 5px #000;
+          box-shadow: inset 0px 0px 5px #000;
+  padding-top: 50px;
+}
+
+.container-form .container-input {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.container-form .container-input label {
+  padding-bottom: 50px;
+}
+
+.container-form input {
+  background: #f1f1f1;
+  color: black;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  width: 100%;
+  margin: 0 auto;
+  height: 40px;
+  margin-top: 10px;
+  color: black;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.container-form input:focus {
+  outline: none;
+}
+
+.container-form .send {
+  -webkit-appearance: none;
+  width: 60%;
+  margin-bottom: 40px;
+  background: #21295C;
+  color: #f1f1f1;
+}
+
+.container-form .send:hover {
+  background: #1B3B6F;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media (max-width: 960px) {
+  .container-form {
+    width: 90%;
+  }
+  .container-form input {
+    width: 85%;
+  }
+}
+
+.option {
+  padding-top: 50px;
+  width: 40%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.button {
+  cursor: pointer;
+  border: none;
+  width: 40%;
+  height: 50px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.delete {
+  background: rgba(255, 0, 0, 0.7);
+}
+
+.cancel {
+  background: rgba(0, 0, 255, 0.7);
+}
+
+@media (max-width: 960px) {
+  .option {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=ListProductsStyle.css.map */
